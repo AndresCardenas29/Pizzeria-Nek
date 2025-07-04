@@ -22,8 +22,8 @@ public class OrderEntity {
     private Double total;
 
     @Column(nullable = false, columnDefinition = "CHAR(1)")
-    private String methodl;
+    private String method;
 
-    @Column(name = "additaional_notes", length = 200)
+    @Column(name = "additional_notes", length = 200)
     private String additionalNotes;
 }

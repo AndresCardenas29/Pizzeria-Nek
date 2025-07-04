@@ -19,18 +19,18 @@ public class PizzaEntity {
     @Column(name = "name", nullable = false, length = 30, unique = true)
     private String name;
 
-    @Column(name = "description", nullable = false, length = 100)
+    @Column( nullable = false, length = 100)
     private String description;
 
-    @Column(name = "price", nullable = false, columnDefinition = "decimal(5,2)")
+    @Column(nullable = false, columnDefinition = "decimal(5,2)")
     private Double price;
-    @Column(name = "vegetarian", columnDefinition = "TINYINT")
+
+    @Column(columnDefinition = "TINYINT")
     private Boolean vegetarian;
 
-    @Column(name = "vegan", columnDefinition = "TINYINT")
+    @Column(columnDefinition = "TINYINT")
     private Boolean vegan;
 
-    @Column(name = "available", columnDefinition = "TINYINT", nullable = false)
+    @Column(columnDefinition = "TINYINT", nullable = false)
     private Boolean available;
-
 }
