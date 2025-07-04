@@ -19,7 +19,7 @@ public class PizzaEntity {
     @Column(name = "name", nullable = false, length = 30, unique = true)
     private String name;
 
-    @Column( nullable = false, length = 100)
+    @Column( nullable = false, length = 200)
     private String description;
 
     @Column(nullable = false, columnDefinition = "decimal(5,2)")
